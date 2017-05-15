@@ -13,6 +13,10 @@ Meteor.methods({
         subject: `${message.name} sent a message!`,
         text: message.message,
       });
+
+      console.log('Message sent...');
     });
+
+    console.log('Sending email...');
   },
 });
